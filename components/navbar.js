@@ -1,12 +1,14 @@
+import Image from 'next/image'
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import Link from 'next/link'
 
 const navigation = [
-	{ name: 'Dashboard', href: '#', current: true },
-	{ name: 'Team', href: '#', current: false },
-	{ name: 'Projects', href: '#', current: false },
-	{ name: 'Calendar', href: '#', current: false },
+	{ name: 'Home', href: '/' },
+	{ name: 'About', href: '/about' },
+	{ name: 'Projects', href: '/projects' },
+	{ name: 'Skills', href: '/skills' },
 ]
 
 function classNames(...classes) {
@@ -15,7 +17,9 @@ function classNames(...classes) {
 
 const Navbar = () => {
 	return (
-		<Disclosure as='nav' className='bg-gray-800'>
+		<Disclosure
+			as='nav'
+			className='bg-navy border-b-2 border-grey border-opacity-80 top-0 sticky z-50'>
 			{({ open }) => (
 				<>
 					<div className='max-w-7xl mx-auto px-2 sm:px-6 lg:px-8'>
@@ -31,34 +35,18 @@ const Navbar = () => {
 									)}
 								</Disclosure.Button>
 							</div>
-							<div className='flex-1 flex items-center justify-center sm:items-stretch sm:justify-start'>
-								<div className='flex-shrink-0 flex items-center'>
-									<img
-										className='block lg:hidden h-8 w-auto'
-										src='https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=500'
-										alt='Workflow'
-									/>
-									<img
-										className='hidden lg:block h-8 w-auto'
-										src='https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=500'
-										alt='Workflow'
-									/>
-								</div>
+							<div className='flex-1 flex items-center justify-center sm:items-stretch sm:justify-center'>
+								<div className='flex-shrink-0 flex items-center'></div>
 								<div className='hidden sm:block sm:ml-6'>
 									<div className='flex space-x-4'>
 										{navigation.map((item) => (
-											<a
+											<li
 												key={item.name}
-												href={item.href}
-												className={classNames(
-													item.current
-														? 'bg-gray-900 text-white'
-														: 'text-gray-300 hover:bg-gray-700 hover:text-white',
-													'px-3 py-2 rounded-md text-sm font-medium'
-												)}
-												aria-current={item.current ? 'page' : undefined}>
-												{item.name}
-											</a>
+												className='text-orange px-3 py-2 rounded-md text-sm font-medium list-none'>
+												<Link href={item.href}>
+													<a>{item.name}</a>
+												</Link>
+											</li>
 										))}
 									</div>
 								</div>
@@ -76,11 +64,9 @@ const Navbar = () => {
 									<div>
 										<Menu.Button className='bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white'>
 											<span className='sr-only'>Open user menu</span>
-											<img
-												className='h-8 w-8 rounded-full'
-												src='https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
-												alt=''
-											/>
+											<p className='p-3 bg-grey rounded-full font-bold hover:scale-110 transition ease-in-out delay-75 hover:bg-orange'>
+												DG
+											</p>
 										</Menu.Button>
 									</div>
 									<Transition
@@ -91,42 +77,15 @@ const Navbar = () => {
 										leave='transition ease-in duration-75'
 										leaveFrom='transform opacity-100 scale-100'
 										leaveTo='transform opacity-0 scale-95'>
-										<Menu.Items className='origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none'>
+										<Menu.Items className='origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-grey ring-1 ring-black ring-opacity-5 focus:outline-none'>
 											<Menu.Item>
-												{({ active }) => (
+												<Link href='/api/resume'>
 													<a
-														href='#'
-														className={classNames(
-															active ? 'bg-gray-100' : '',
-															'block px-4 py-2 text-sm text-gray-700'
-														)}>
-														Your Profile
+														target='_blank'
+														className='block px-4 py-2 text-sm text-gray-700 hover:border-b-2 w-max  hover:border-white transition delay-75 ease-in-out'>
+														Resume
 													</a>
-												)}
-											</Menu.Item>
-											<Menu.Item>
-												{({ active }) => (
-													<a
-														href='#'
-														className={classNames(
-															active ? 'bg-gray-100' : '',
-															'block px-4 py-2 text-sm text-gray-700'
-														)}>
-														Settings
-													</a>
-												)}
-											</Menu.Item>
-											<Menu.Item>
-												{({ active }) => (
-													<a
-														href='#'
-														className={classNames(
-															active ? 'bg-gray-100' : '',
-															'block px-4 py-2 text-sm text-gray-700'
-														)}>
-														Sign out
-													</a>
-												)}
+												</Link>
 											</Menu.Item>
 										</Menu.Items>
 									</Transition>
