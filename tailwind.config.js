@@ -11,10 +11,11 @@ module.exports = {
 			grey: '#374151',
 			orange: '#ff7900',
 			navy: '#1b2c3a',
-			darkGrey: '#172531',
+			darkGrey: '#BEBEBE',
 			cream: '#cad2c5',
 			links: '#9bb7d0',
 			linksHover: '#cddbe7',
+			blue2: '#c6c9d2',
 		},
 
 		extend: {},
