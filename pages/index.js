@@ -19,7 +19,7 @@ export default function Home() {
 			{/*       Nav bar     */}
 			<Navbar />
 
-			<div className='flex flex-col items-center w-full py-12 bg-grey'>
+			<div className='relative flex flex-col items-center w-full py-12 bg-grey'>
 				<main className='flex flex-col justify-start h-full md:w-3/5'>
 					<header className='mx-4 md:mx-0'>
 						<h1 className='mb-4 text-5xl'>Welcome</h1>
@@ -33,12 +33,13 @@ export default function Home() {
 						</p>
 					</header>
 				</main>
-				{/* <div className='mb-10 w-full h-screen bg-navy shadow-xl  '>
+				<div className='z-10 mb-10 w-full h-screen shadow-xl  '>
 					<Spline
-						className='rounded-lg cursor-grab'
-						scene='https://prod.spline.design/jM7iJtkNdHonXjTv/scene.splinecode'
+						className='rounded-sm cursor-grab'
+						// scene='https://prod.spline.design/jM7iJtkNdHonXjTv/scene.splinecode'
+						scene='https://prod.spline.design/6IcN6I8oOqHh40BT/scene.splinecode'
 					/>
-				</div> */}
+				</div>
 				<section className='mx-4 md:mx-0 md:w-3/5 my-24 '>
 					<article className=''>
 						<h2 className='mb-4 text-4xl text-orange'> About Me</h2>

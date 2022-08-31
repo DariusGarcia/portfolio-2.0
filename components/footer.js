@@ -75,15 +75,15 @@ const navigation = {
 
 export default function Example() {
 	return (
-		<footer className='bg-darkGrey text-black'>
-			<div className='mx-auto max-w-7xl overflow-hidden py-12 px-4 sm:px-6 lg:px-8'>
+		<footer className='bg-darkGrey text-grey'>
+			<div className='mx-auto md:w-3/5 overflow-hidden py-12'>
 				<nav
 					className='-mx-5 -my-2 flex flex-wrap justify-center'
 					aria-label='Footer'>
 					{navigation.main.map((item) => (
 						<div key={item.name} className='px-5 py-2'>
 							<Link href={item.href}>
-								<a className='text-base text-white  hover:bg-navy hover:text-orange p-3 hover:shadow-xl hover:scale-110 transition ease-in-out delay-50 rounded-lg items-none'>
+								<a className='text-base text-white  hover:bg-grey hover:text-orange p-3 hover:shadow-xl hover:scale-110 transition ease-in-out delay-50 rounded-lg items-none'>
 									{item.name}
 								</a>
 							</Link>
@@ -95,16 +95,14 @@ export default function Example() {
 						<Link href={item.href}>
 							<a
 								key={item.name}
-								className='text-white  hover:bg-navy hover:text-orange p-3 hover:shadow-xl hover:scale-110 transition ease-in-out delay-50 rounded-lg items-none'>
+								className='text-white  hover:bg-grey hover:text-orange p-3 hover:shadow-xl hover:scale-110 transition ease-in-out delay-50 rounded-lg items-none'>
 								<span className='sr-only'>{item.name}</span>
 								<item.icon className='h-6 w-6' aria-hidden='true' />
 							</a>
 						</Link>
 					))}
 				</div>
-				<p className='mt-8 text-center text-base text-gray-400'>
-					&copy; 2022 Darius Garcia
-				</p>
+				<p className='mt-8 text-center font-bold'>&copy; 2022 Darius Garcia</p>
 			</div>
 		</footer>
 	)

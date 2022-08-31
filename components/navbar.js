@@ -3,6 +3,7 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 import Link from 'next/link'
+import Spline from '@splinetool/react-spline'
 
 const navigation = [
 	{ name: 'Home', href: '/' },
@@ -26,7 +27,7 @@ const Navbar = () => {
 						<div className='relative flex items-center justify-between h-16'>
 							{/* Mobile menu button*/}
 							<div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
-								<Disclosure.Button className='inline-flex items-center justify-center p-2 rounded-md text-orange hover:text-white hover:bg-darkGrey focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'>
+								<Disclosure.Button className='inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-darkGrey focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'>
 									<span className='sr-only'>Open main menu</span>
 									{open ? (
 										<XIcon className='block h-6 w-6' aria-hidden='true' />
@@ -54,15 +55,18 @@ const Navbar = () => {
 									</div>
 								</div>
 							</div>
-							<div className='absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
+							<div className='absolute inset-y-0 right-0 flex h-max w-max items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
 								{/* Profile dropdown */}
 								<Menu as='div' className='ml-3 relative'>
 									<div>
 										<Menu.Button className='bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white'>
 											<span className='sr-only'>Open user menu</span>
-											<p className='p-3 bg-grey hover:bg-links rounded-full font-bold hover:scale-110 transition ease-in-out delay-75'>
-												DG
-											</p>
+											<div className='flex items-center justify-center h-16 w-16 border-2 border-darkGrey hover:bg-darkGrey rounded-full font-bold hover:scale-110 transition ease-in-out delay-75'>
+												<Spline
+													className='flex justify-center items-center pt-4 pr-2 rounded-full'
+													scene='https://prod.spline.design/R7z1cyl4nheotwR9/scene.splinecode'
+												/>
+											</div>
 										</Menu.Button>
 									</div>
 									<Transition
