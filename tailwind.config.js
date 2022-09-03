@@ -16,6 +16,8 @@ module.exports = {
 			links: '#9bb7d0',
 			linksHover: '#cddbe7',
 			blue2: '#c6c9d2',
+			blue3: '#00bbff',
+			black2: '#1a1a1a',
 		},
 
 		extend: {},

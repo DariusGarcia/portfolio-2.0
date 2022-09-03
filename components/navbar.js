@@ -20,7 +20,7 @@ const Navbar = () => {
 	return (
 		<Disclosure
 			as='nav'
-			className='bg-grey shadow-lg py-3 border-darkGrey border-opacity-80 top-0 sticky z-50'>
+			className='bg-black2 shadow-lg py-3 border-darkGrey border-opacity-80 top-0 sticky z-50'>
 			{({ open }) => (
 				<div className='md:flex md:justify-center'>
 					<div className=' md:w-3/5 px-2 md:px-0'>
@@ -37,16 +37,16 @@ const Navbar = () => {
 								</Disclosure.Button>
 							</div>
 							{/* Navbar links */}
-							<div className='flex-1 flex items-center justify-center sm:items-center sm:justify-start'>
+							<div className='flex-1 md:-ml-2 flex items-center justify-center sm:items-center sm:justify-start'>
 								<div className='flex-shrink-0 flex items-center'></div>
 								<div className='hidden sm:block '>
 									<div className='flex space-x-4'>
 										{navigation.map((item) => (
 											<li
 												key={item.name}
-												className='text-orange py-2 rounded-md text-sm font-medium list-none'>
+												className=' py-2 rounded-md text-sm font-medium list-none'>
 												<Link href={item.href}>
-													<a className='text-white hover:bg-links hover:text-black p-3 hover:shadow-xl hover:scale-110 transition ease-in-out delay-50 rounded-lg'>
+													<a className='text-white hover:bg-blue3 hover:opacity-80 hover:text-black2 p-3 hover:shadow-xl hover:scale-110 transition ease-in-out delay-50 rounded-lg'>
 														{item.name}
 													</a>
 												</Link>
@@ -61,11 +61,14 @@ const Navbar = () => {
 									<div>
 										<Menu.Button className='bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white'>
 											<span className='sr-only'>Open user menu</span>
-											<div className='flex items-center justify-center h-16 w-16 border-2 border-darkGrey hover:bg-darkGrey rounded-full font-bold hover:scale-110 transition ease-in-out delay-75'>
+											{/* <div className='flex items-center justify-center h-16 w-16 border-2 border-darkGrey hover:bg-darkGrey rounded-full font-bold hover:scale-110 transition ease-in-out delay-75'>
 												<Spline
 													className='flex justify-center items-center pt-4 pr-2 rounded-full'
 													scene='https://prod.spline.design/R7z1cyl4nheotwR9/scene.splinecode'
 												/>
+											</div> */}
+											<div className='flex items-center text-blue3 justify-center h-16 w-16 border-2 border-darkGrey hover:bg-darkGrey rounded-full font-bold hover:scale-110 transition ease-in-out delay-75'>
+												DG
 											</div>
 										</Menu.Button>
 									</div>

@@ -19,7 +19,7 @@ export default function Home() {
 			{/*       Nav bar     */}
 			<Navbar />
 
-			<div className='relative flex flex-col items-center w-full py-12 bg-grey'>
+			<div className='relative flex flex-col items-center w-full py-12 bg-black2'>
 				<main className='flex flex-col justify-start h-full md:w-3/5'>
 					<header className='mx-4 md:mx-0'>
 						<h1 className='mb-4 text-5xl'>Welcome</h1>
@@ -43,8 +43,7 @@ export default function Home() {
 				<section className='mx-4 md:mx-0 md:w-3/5 my-24 '>
 					<article className=''>
 						<h2 className='mb-4 text-4xl text-orange'> About Me</h2>
-						<p className=''>
-							{' '}
+						<p className='mb-4'>
 							I'm a recent UC Irvine graduate with a B.A. degree in Business
 							Economics. I'm not afraid of failure as that's where true growth
 							flourishes. I'm highly motivated and a fast learner. I found a
@@ -52,11 +51,14 @@ export default function Home() {
 							solving various real world problems and being able to let my
 							creativity run freely. I'm always trying to learn new technologies
 							to further advance my capabilities to see where my imagination
-							leads me. I strive to keep learning new things to not only apply
-							to my everyday life, but to constantly challenge what's possible.
-							I try to refrain from accepting one approach of doing something,
-							but rather try to seek comfort in embracing the unknown to be able
-							to shed light on new solutions. I'm a problem solver that wants to
+							leads me.
+						</p>
+						<p className=''>
+							I strive to keep learning new things to not only apply to my
+							everyday life, but to constantly challenge what's possible. I try
+							to refrain from accepting one approach of doing something, but
+							rather try to seek comfort in embracing the unknown to be able to
+							shed light on new solutions. I'm a problem solver that wants to
 							utilize my skills to help other people and to make the world a
 							better place for all.
 						</p>
