@@ -5,8 +5,3 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
-
-// loader for video files
-const withVideos = require('next-videos')
-
-module.exports = withVideos()
