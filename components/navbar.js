@@ -67,7 +67,7 @@ const Navbar = () => {
 													scene='https://prod.spline.design/R7z1cyl4nheotwR9/scene.splinecode'
 												/>
 											</div> */}
-											<div className='flex items-center text-blue3 justify-center h-16 w-16 border-2 border-darkGrey hover:bg-darkGrey rounded-full font-bold hover:scale-110 transition ease-in-out delay-75'>
+											<div className='flex items-center text-blue3 justify-center h-16 w-16 border-2 border-darkGrey hover:bg-blue3 hover:text-white rounded-full font-bold hover:scale-110 transition ease-in-out delay-75'>
 												DG
 											</div>
 										</Menu.Button>

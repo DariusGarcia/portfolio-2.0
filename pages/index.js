@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 import ContactBtn from '../components/contactBtn'
+import { BsBoxArrowInRight } from 'react-icons/bs'
 
 // spline animation library
 import Spline from '@splinetool/react-spline'
@@ -19,21 +21,27 @@ export default function Home() {
 			{/*       Nav bar     */}
 			<Navbar />
 
-			<div className='relative flex flex-col items-center w-full py-12 bg-black2'>
+			<div className='h-full flex flex-col items-center w-full py-12 bg-black2'>
 				<main className='flex flex-col justify-start h-full md:w-3/5'>
 					<header className='mx-4 md:mx-0'>
 						<h1 className='mb-4 text-5xl'>Welcome</h1>
 						<h1 className='mb-4 text-3xl'>
-							My name is <span className='text-orange'>Darius</span>
+							My name is <span className='text-blue3'>Darius</span>
 						</h1>
-						<p className='md:w-1/2'>
+						<p className='md:w-1/2 mb-8'>
 							I'm a front-end developer that is driven to uncover the "why" in
 							how things work. I'm looking to contribute to interesting projects
 							that will make a meaningful impact on people.
 						</p>
+						<Link href='/projects'>
+							<a className='flex flex-row w-max items-center gap-2 p-4 bg-blue3 transition ease-in-out delay-100 hover:scale-95 hover:opacity-75  text-white rounded-lg'>
+								<div>Check out my projects </div>
+								<BsBoxArrowInRight size={25}></BsBoxArrowInRight>
+							</a>
+						</Link>
 					</header>
 				</main>
-				<div className='z-10 mb-10 w-full h-screen shadow-xl  '>
+				<div className='z-10 my-12 h-screen w-full shadow-xl  '>
 					<Spline
 						className='rounded-sm cursor-grab'
 						// scene='https://prod.spline.design/jM7iJtkNdHonXjTv/scene.splinecode'
@@ -42,7 +50,7 @@ export default function Home() {
 				</div>
 				<section className='mx-4 md:mx-0 md:w-3/5 my-24 '>
 					<article className=''>
-						<h2 className='mb-4 text-4xl text-orange'> About Me</h2>
+						<h2 className='mb-4 text-4xl text-blue3'> About Me</h2>
 						<p className='mb-4'>
 							I'm a recent UC Irvine graduate with a B.A. degree in Business
 							Economics. I'm not afraid of failure as that's where true growth

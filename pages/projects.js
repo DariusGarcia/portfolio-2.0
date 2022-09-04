@@ -73,14 +73,14 @@ const Projects = () => {
 		<div className='bg-black2'>
 			<Navbar />
 
-			<main className='flex justify-center mx-4 md:mx-0 my-12 md:my-24 h-full bg-black2 '>
-				<div className='w-full md:w-3/5'>
+			<main className='flex justify-center mx-4 md:mx-0 my-12 bg-black2 '>
+				<div className=' w-full md:w-3/5'>
 					<header className='mb-12'>
 						<h1 className='text-4xl text-blue3'>Projects</h1>
 					</header>
-					<section className='mb-12 '>
+					<section className=' '>
 						<h2 className='text-2xl mb-4'>Websites and Web Apps</h2>
-						<div className='flex flex-col md:grid md:grid-cols-2 md:gap-8 justify-between cursor-pointer mb-56'>
+						<div className='flex flex-col md:grid md:grid-cols-2 md:gap-8 justify-between cursor-pointer mb-24'>
 							{projectList.map((project) => (
 								<SingleProject
 									key={project.name}
@@ -92,34 +92,11 @@ const Projects = () => {
 									setOpen={handleStatusChange}
 								/>
 							))}
-							{/* {projectList.map((project) => (
-								<article
-									onClick={() => {
-										setOpen('i')
-										setOpen(!'i')
-									}}
-									key={project.name}
-									className='shadow-xl p-4 border-2 border-darkGrey rounded-md hover:scale-110 transition ease-in-out delay-75 '>
-									{open === 'i' ? (
-										<>
-											<h3 className=''> {project.name}</h3>
-											<p className='text-darkGrey'>{project.description}</p>
-										</>
-									) : (
-										<>
-											<Image src={project.image} width='10' height='10'></Image>
-											<h3 className=''> {project.name}</h3>
-											<p className='text-darkGrey'>{project.description}</p>
-											<p className=''>{project.tech}</p>
-										</>
-									)}
-								</article>
-							))} */}
 						</div>
 					</section>
 					<section className=''>
-						<h2 className='text-2xl'>Mobile Apps</h2>
-						<div className='flex flex-col md:grid md:grid-cols-2 md:gap-8 justify-between cursor-pointer mb-56'>
+						<h2 className='text-2xl mb-4'>Mobile Apps</h2>
+						<div className='flex flex-col md:grid md:grid-cols-2 md:gap-8 justify-between cursor-pointer mb-24'>
 							{mobileApps.map((project) => (
 								<SingleMobileApp
 									key={project.name}
