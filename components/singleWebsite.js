@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { GrExpand } from 'react-icons/gr'
 import { BsArrowsAngleExpand } from 'react-icons/bs'
 
-export default function SingleProject({
+export default function SingleWebsite({
 	name,
 	description,
 	tech,
@@ -46,7 +46,7 @@ export default function SingleProject({
 					<p className='mt-2 text-sm text-darkGrey'>{description}</p>
 
 					<div className='flex justify-center items-center cursor-pointer mt-4'>
-						<video autoplay muted loop controls className=''>
+						<video autoplay muted loop controls className='rounded-lg'>
 							<source src={image} />
 						</video>
 					</div>

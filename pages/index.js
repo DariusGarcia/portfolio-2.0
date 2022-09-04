@@ -21,7 +21,7 @@ export default function Home() {
 			{/*       Nav bar     */}
 			<Navbar />
 
-			<div className='h-full flex flex-col items-center w-full py-12 bg-black2'>
+			<div className='h-full flex flex-col items-center w-full py-12 selection:bg-blue3 bg-black2'>
 				<main className='flex flex-col justify-start h-full md:w-3/5'>
 					<header className='mx-4 md:mx-0'>
 						<h1 className='mb-4 text-5xl'>Welcome</h1>
@@ -34,7 +34,7 @@ export default function Home() {
 							that will make a meaningful impact on people.
 						</p>
 						<Link href='/projects'>
-							<a className='flex flex-row w-max items-center gap-2 p-4 bg-blue3 transition ease-in-out delay-100 hover:scale-95 hover:opacity-75  text-white rounded-lg'>
+							<a className='flex flex-row w-max shadow-2xl items-center gap-2 p-4 bg-blue3 transition ease-in-out delay-100 hover:scale-95 hover:opacity-75  text-white rounded-lg'>
 								<div>Check out my projects </div>
 								<BsBoxArrowInRight size={25}></BsBoxArrowInRight>
 							</a>
