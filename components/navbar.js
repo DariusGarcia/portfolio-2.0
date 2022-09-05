@@ -23,7 +23,7 @@ const Navbar = () => {
 			className='bg-black2 shadow-lg py-3 border-darkGrey border-opacity-80 top-0 sticky z-50'>
 			{({ open }) => (
 				<div className='md:flex md:justify-center'>
-					<div className='w-full  mx-4 lg:w-5/6 px-2 md:pl-4 '>
+					<div className='w-full  px-2 md:px-4 lg:w-5/6 md:pl-8 lg:pl-4 '>
 						<div className='relative flex items-center justify-between h-16'>
 							{/* Mobile menu button*/}
 							<div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
