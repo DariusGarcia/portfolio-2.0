@@ -10,7 +10,6 @@ export default function SingleWebsite({
 	tech,
 	image,
 	link,
-	type,
 }) {
 	const [open, setOpen] = useState(false)
 
@@ -52,7 +51,7 @@ export default function SingleWebsite({
 				<div className=' top-20 flex flex-col cursor-text '>
 					<div className='flex flex-row justify-between'>
 						<div className='flex flex-row items-center gap-2'>
-							<h3 className='text-xl font-bold'> {name}</h3>
+							<h3 className='text-xl font-bold ml-2'> {name}</h3>
 							<Link href={link}>
 								<a></a>
 							</Link>

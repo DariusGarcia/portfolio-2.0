@@ -45,8 +45,8 @@ const Projects = () => {
 									}}
 									className={
 										!websiteOpen
-											? 'bg-darkGrey text-sm w-full font-semibold p-4 rounded-lg transition ease-in-out delay-55 hover:scale-95 hover:opacity-75'
-											: 'bg-blue3 text-sm w-full font-semibold p-4 rounded-lg transition ease-in-out delay-55 hover:scale-95 hover:opacity-75'
+											? 'bg-darkGrey bg-opacity-50 text-sm w-full font-semibold p-4 rounded-lg transition ease-in-out delay-55 hover:scale-95 opacity-75'
+											: 'text-sm w-full font-semibold p-4 rounded-lg transition ease-in-out delay-55 hover:scale-95 hover:opacity-75 bg-blue3 bg-opacity-20 hover:bg-opacity-100 hover:text-white border-2 border-blue3 text-blue3 '
 									}>
 									WEBSITES & WEB APPS
 								</button>
@@ -62,8 +62,8 @@ const Projects = () => {
 									}}
 									className={
 										!mobileOpen
-											? 'bg-darkGrey text-sm w-full font-semibold p-4 rounded-lg transition ease-in-out delay-55 hover:scale-95 hover:opacity-75 '
-											: 'bg-blue3 text-sm w-full font-semibold p-4 rounded-lg transition ease-in-out delay-55 hover:scale-95 hover:opacity-75 '
+											? 'bg-darkGrey bg-opacity-50 text-sm w-full font-semibold p-4 rounded-lg transition ease-in-out delay-55 hover:scale-95 opacity-75'
+											: 'text-sm w-full font-semibold p-4 rounded-lg transition ease-in-out delay-55  hover:opacity-75 bg-blue3 bg-opacity-20 hover:bg-opacity-100 hover:text-white border-2 border-blue3 text-blue3 '
 									}>
 									MOBILE APPS
 								</button>
@@ -96,7 +96,6 @@ const Projects = () => {
 											tech={project.tech}
 											image={project.image}
 											link={project.link}
-											type={project.type}
 											setOpen={handleStatusChange}
 										/>
 									))}
@@ -115,7 +114,6 @@ const Projects = () => {
 											description={project.description}
 											tech={project.tech}
 											image={project.image}
-											type={project.type}
 											link={project.link}
 										/>
 									))}
@@ -139,8 +137,7 @@ const projects = {
 				"Freelance Next.js project for a client that lets customers send payments utilizing Stripe's payment API.",
 			tech: 'Next.js, React, Tailwind CSS',
 			image: fixit,
-			link: 'https://fititcredit.com/',
-			type: 'video/mp4',
+			link: 'https://fixitcreditinc.com/',
 		},
 		{
 			name: 'BullBear Market',
@@ -149,7 +146,6 @@ const projects = {
 			tech: 'React, Tailwind CSS, node.js, REST APIs, user Auth',
 			image: bullbear,
 			link: 'https://bullbearmarket.net/',
-			type: 'video/mp4',
 		},
 		{
 			name: 'KVL Communications',
@@ -158,7 +154,6 @@ const projects = {
 			tech: 'Next.js, React, Tailwind CSS',
 			image: kvl,
 			link: 'https://kvl-communications.com/',
-			type: 'video/mp4',
 		},
 	],
 

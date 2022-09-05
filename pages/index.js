@@ -34,7 +34,7 @@ export default function Home() {
 							that will make a meaningful impact on people.
 						</p>
 						<Link href='/projects'>
-							<a className='flex flex-row w-max shadow-2xl items-center gap-2 p-4 bg-blue3 transition ease-in-out delay-100 hover:scale-95 hover:opacity-75  text-white rounded-lg'>
+							<a className='flex flex-row w-max shadow-2xl items-center gap-2 p-4 font-semibold bg-blue3 bg-opacity-20 border-2 border-blue3 text-blue3 transition ease-in-out delay-100 hover:scale-95 hover:opacity-75  rounded-lg'>
 								<div>Check out my projects </div>
 								<BsBoxArrowInRight size={25}></BsBoxArrowInRight>
 							</a>
