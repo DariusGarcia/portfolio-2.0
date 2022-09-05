@@ -15,11 +15,11 @@ const navigation = {
 			href: 'https://github.com/dariusgarcia',
 			icon: <BsGithub size={20}></BsGithub>,
 		},
-		{
-			name: 'LinkedIn',
-			href: 'https://www.linkedin.com/in/darius-garcia/',
-			icon: <BsLinkedin size={20}></BsLinkedin>,
-		},
+		// {
+		// 	name: 'LinkedIn',
+		// 	href: 'https://www.linkedin.com/in/darius-garcia/',
+		// 	icon: <BsLinkedin size={20}></BsLinkedin>,
+		// },
 	],
 }
 

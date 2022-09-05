@@ -1,12 +1,13 @@
 import { useState } from 'react'
+// import components
+import Navbar from '../components/navbar'
 import SingleWebsite from '../components/singleWebsite'
 import SingleMobileApp from '../components/singleMobileApp'
-import Navbar from '../components/navbar'
-import Footer from '../components/footer'
 import ContactBtn from '../components/contactBtn'
-// import { ScrollToTop } from '../utils/ScrollToTop'
-import logo from '../public/favicon.ico'
-import Image from 'next/image'
+import Footer from '../components/footer'
+// import react icons
+import { MdComputer, MdPhoneIphone } from 'react-icons/md'
+// import mp4/gif media
 import fixit from '../public/videos/fixitcredit.mp4'
 import bullbear from '../public/videos/bullbear.mp4'
 import kvl from '../public/videos/kvl.mp4'
@@ -28,11 +29,12 @@ const Projects = () => {
 			<main className='flex justify-center mx-4 lg:mx-0 md:pt-12 mb-12 bg-black2 '>
 				<div className='md:grid md:grid-cols-3 w-full lg:w-5/6'>
 					<div>
-						<div className='md:fixed px-8 pb-8 row-span-1 md:mt-4 flex flex-col items-center border-darkGrey md:border-[1px]  md:bg-opacity-20 md:mr-8 h-max  rounded-lg'>
-							<h1 className='mb-4 mt-4 md:mb-8 text-3xl font-semibold'>
-								Projects
-							</h1>
-							<div className='flex flex-col items-start gap-8'>
+						<div className='md:fixed px-8 md:ml-4 pb-8 row-span-1 md:mt-4 flex flex-col items-center border-darkGrey md:border-[1px]  md:bg-opacity-20 md:mr-8 h-max  rounded-lg'>
+							<div className='flex flex-row gap-2 items-center mb-4 mt-4 md:mb-8'>
+								<h1 className=' text-3xl font-semibold'>Projects</h1>
+							</div>
+							<div className='flex flex-col items-start gap-4'>
+								{/*------------logic to check if the project article has been toggled to open or not ------------ */}
 								<button
 									onClick={() => {
 										if (mobileOpen) {
@@ -74,19 +76,24 @@ const Projects = () => {
 						</div>
 					</div>
 
-					{/* 2nd column of the grid container */}
-					{/* containers the individual projects */}
+					{/* --------------------- 2nd column of the on medium sized screen grid container ---------------------*/}
+					{/* --------------------- containers the individual projects to be displayed -------------------*/}
 					<div className=' row-span-2 col-span-2 overflow-auto md:mr-2'>
 						<header className='mb-8 md:mb-12'>
-							<p className='mt-4 md:text-lg '>
+							<p className='mt-2 md:text-lg '>
 								Here are some of the recent projects I have completed.
 							</p>
 						</header>
 						{websiteOpen ? (
 							<section className=''>
-								<h2 className=' text-xl font-bold md:text-2xl mb-4'>
-									WEBSITES AND WEB APPS
-								</h2>
+								<div className='flex flex-row items-star gap-4'>
+									<h2 className=' text-xl font-bold md:text-2xl mb-4'>
+										WEBSITES AND WEB APPS
+									</h2>
+									<span className=''>
+										<MdComputer size={30} className='text-white'></MdComputer>
+									</span>
+								</div>
 								<div className='flex flex-col md:gap-8 justify-between cursor-pointer mb-24'>
 									{projects.websites.map((project) => (
 										<SingleWebsite
@@ -96,6 +103,7 @@ const Projects = () => {
 											tech={project.tech}
 											image={project.image}
 											link={project.link}
+											github={project.github}
 											setOpen={handleStatusChange}
 										/>
 									))}
@@ -103,9 +111,14 @@ const Projects = () => {
 							</section>
 						) : (
 							<section className=''>
-								<h2 className='text-xl md:text-2xl mb-4 font-bold'>
-									MOBILE APPS
-								</h2>
+								<div className='flex flex-row items-star gap-2'>
+									<h2 className='text-xl md:text-2xl mb-4 font-bold'>
+										MOBILE APPS
+									</h2>
+									<MdPhoneIphone
+										size={25}
+										className='text-white'></MdPhoneIphone>
+								</div>
 								<div className='flex flex-col md:gap-8 justify-between cursor-pointer mb-24'>
 									{projects.webapps.map((project) => (
 										<SingleMobileApp
@@ -138,6 +151,7 @@ const projects = {
 			tech: 'Next.js, React, Tailwind CSS',
 			image: fixit,
 			link: 'https://fixitcreditinc.com/',
+			github: 'https://github.com/dariusgarcia/fixitcreditinc',
 		},
 		{
 			name: 'BullBear Market',
@@ -146,6 +160,7 @@ const projects = {
 			tech: 'React, Tailwind CSS, node.js, REST APIs, user Auth',
 			image: bullbear,
 			link: 'https://bullbearmarket.net/',
+			github: 'https://github.com/dariusgarcia/bullbear',
 		},
 		{
 			name: 'KVL Communications',
@@ -154,6 +169,7 @@ const projects = {
 			tech: 'Next.js, React, Tailwind CSS',
 			image: kvl,
 			link: 'https://kvl-communications.com/',
+			github: 'https://github.com/dariusgarcia/',
 		},
 	],
 

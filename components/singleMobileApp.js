@@ -35,7 +35,7 @@ export default function SingleProject({
 					<div className='flex mt-2 flex-row items-center gap-2 hover:bg-blue3 hover:bg-opacity-40 rounded-lg p-2 w-max'>
 						<button className=' text-blue3'>
 							<Link href={link}>
-								<a target='_blank'>Link to {name}</a>
+								<a target='_blank'>source code</a>
 							</Link>
 						</button>
 						<BsGithub
@@ -59,7 +59,7 @@ export default function SingleProject({
 					<div className='flex mt-2 flex-row items-center gap-2 hover:bg-blue3 hover:bg-opacity-40 rounded-lg p-2 w-max'>
 						<button className=' text-blue3 '>
 							<Link href={link}>
-								<a target='_blank'>Link to {name}</a>
+								<a target='_blank'>source code</a>
 							</Link>
 						</button>
 						<BsGithub
