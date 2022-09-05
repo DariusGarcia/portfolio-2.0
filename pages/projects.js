@@ -26,45 +26,50 @@ const Projects = () => {
 		<div className='bg-black2'>
 			<Navbar />
 
-			<main className='flex justify-center mx-4 md:mx-0 md:pt-12 mb-12 bg-black2 '>
-				<div className='md:grid md:grid-cols-3 md:grid-rows-3 w-full md:w-3/5'>
-					<div className=' row-span-1 md:sticky md:top-20 md:mt-24 flex flex-col items-center md:bg-black md:bg-opacity-20 md:mr-8 h-max p-4 rounded-lg'>
-						<h1 className='mb-8 md:mb-12 text-3xl'>Projects</h1>
-						<div className='flex flex-col items-start gap-8'>
-							<button
-								onClick={() => {
-									if (mobileOpen) {
-										setWebsiteOpen(!websiteOpen)
-										setMobileOpen(false)
-										window.scrollTo(0, 0)
-									} else {
-										window.scrollTo(0, 0)
-									}
-								}}
-								className={
-									!websiteOpen
-										? 'bg-darkGrey w-full font-semibold p-4 rounded-lg transition ease-in-out delay-55 hover:scale-95 hover:opacity-75'
-										: 'bg-blue3 w-full font-semibold p-4 rounded-lg transition ease-in-out delay-55 hover:scale-95 hover:opacity-75'
-								}>
-								Websites / webapps
-							</button>
-							<button
-								onClick={() => {
-									if (websiteOpen) {
-										setWebsiteOpen(false)
-										setMobileOpen(!mobileOpen)
-										window.scrollTo(0, 0)
-									} else {
-										window.scrollTo(0, 0)
-									}
-								}}
-								className={
-									!mobileOpen
-										? 'bg-darkGrey w-full font-semibold p-4 rounded-lg transition ease-in-out delay-55 hover:scale-95 hover:opacity-75'
-										: 'bg-blue3 w-full font-semibold p-4 rounded-lg transition ease-in-out delay-55 hover:scale-95 hover:opacity-75'
-								}>
-								Mobile Apps
-							</button>
+			<main className='flex justify-center mx-4 lg:mx-0 md:pt-12 mb-12 bg-black2 '>
+				<div className='md:grid md:grid-cols-3 w-full lg:w-5/6'>
+					<div>
+						<div className='md:ml-4 md:fixed px-8 pb-8 row-span-1 md:mt-4 flex flex-col items-center border-white md:border-[1px]  md:bg-opacity-20 md:mr-8 h-max  rounded-lg'>
+							<h1 className='mb-4 md:mt-4 md:mb-8 text-3xl'>Projects</h1>
+							<div className='flex flex-col items-start gap-8'>
+								<button
+									onClick={() => {
+										if (mobileOpen) {
+											setWebsiteOpen(!websiteOpen)
+											setMobileOpen(false)
+											window.scrollTo(0, 0)
+										} else {
+											window.scrollTo(0, 0)
+										}
+									}}
+									className={
+										!websiteOpen
+											? 'bg-darkGrey w-full font-semibold p-4 rounded-lg transition ease-in-out delay-55 hover:scale-95 hover:opacity-75'
+											: 'bg-blue3 w-full font-semibold p-4 rounded-lg transition ease-in-out delay-55 hover:scale-95 hover:opacity-75'
+									}>
+									websites & web apps
+								</button>
+								<button
+									onClick={() => {
+										if (websiteOpen) {
+											setWebsiteOpen(false)
+											setMobileOpen(!mobileOpen)
+											window.scrollTo(0, 0)
+										} else {
+											window.scrollTo(0, 0)
+										}
+									}}
+									className={
+										!mobileOpen
+											? 'bg-darkGrey w-full font-semibold p-4 rounded-lg transition ease-in-out delay-55 hover:scale-95 hover:opacity-75 '
+											: 'bg-blue3 w-full font-semibold p-4 rounded-lg transition ease-in-out delay-55 hover:scale-95 hover:opacity-75 '
+									}>
+									mobile apps
+								</button>
+							</div>
+						</div>
+						<div className='hidden sm:block '>
+							<h1 className=''></h1>
 						</div>
 					</div>
 					<div className=' row-span-2 col-span-2 overflow-auto'>
@@ -78,7 +83,7 @@ const Projects = () => {
 								<h2 className=' text-xl md:text-2xl mb-4'>
 									Websites and Web Apps
 								</h2>
-								<div className='flex flex-col  md:gap-8 justify-between cursor-pointer mb-24'>
+								<div className='flex flex-col md:gap-8 justify-between cursor-pointer mb-24'>
 									{projects.websites.map((project) => (
 										<SingleWebsite
 											key={project.name}
@@ -123,21 +128,24 @@ const projects = {
 	websites: [
 		{
 			name: 'Fix It Credit Inc.',
-			description: 'Freelance Next.js project for a client.',
+			description:
+				"Freelance Next.js project for a client that lets customers send payments utilizing Stripe's payment API.",
 			tech: 'Next.js, React, Tailwind CSS',
 			image: fixit,
 			type: 'video/mp4',
 		},
 		{
 			name: 'BullBear Market',
-			description: 'Side project using React.',
+			description:
+				'Full-stack MERN web app that lets users add stocks from the S&P500 index to their own personal watch list.',
 			tech: 'React, Tailwind CSS, node.js, REST APIs, user Auth',
 			image: bullbear,
 			type: 'video/mp4',
 		},
 		{
 			name: 'KVL Communications',
-			description: 'Freelance Next.js project for a small business.',
+			description:
+				"Freelance marketing website for a small business that's built with Next.js.",
 			tech: 'Next.js, React, Tailwind CSS',
 			image: kvl,
 			type: 'video/mp4',
@@ -147,20 +155,23 @@ const projects = {
 	webapps: [
 		{
 			name: 'Tweeter',
-			description: 'Android mobile app that is a clone of twitter.',
-			tech: 'Next.js, React, Tailwind CSS',
+			description:
+				'Full-stack Android mobile app that lets users login to their Twitter account and compose new Tweets.',
+			tech: 'Kotlin, REST APIs, user Auth',
 			image: tweeter,
 		},
 		{
 			name: 'Instapic',
-			description: 'Side project using React.',
-			tech: 'React, Tailwind CSS, node.js, REST APIs, user Auth',
+			description:
+				'Full-stack Android mobile photo-sharing app similar to Instagram.',
+			tech: 'Kotlin, REST APIs, user Auth',
 			image: instapic,
 		},
 		{
 			name: 'Flixter',
-			description: 'Freelance Next.js project for a small business.',
-			tech: 'Next.js, React, Tailwind CSS',
+			description:
+				'Android mobile app that allows users to browse movies from the The Movie Database API.',
+			tech: 'Kotlin, REST APIs, user Auth',
 			image: flixter,
 		},
 	],

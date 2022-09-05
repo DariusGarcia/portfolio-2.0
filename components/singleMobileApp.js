@@ -17,13 +17,14 @@ export default function SingleProject({
 			onClick={() => {
 				setOpen(!open)
 			}}
+			id={name}
 			key={name}
-			className='relative mb-4 md:mb-0 h-max p-4 border-2 hover:border-blue3 text-white border-darkGrey rounded-md hover:scale-95 transition ease-in-out delay-110 shadow-xl'>
+			className='relative mb-4 md:mb-0 h-max p-4 border-2 hover:border-blue3 text-white border-darkGrey rounded-md transition ease-in-out delay-110 shadow-xl'>
 			{!open ? (
 				<div className=''>
 					<div className='flex flex-row justify-between cursor-pointer'>
 						<h3 className='w-max font-bold'> {name}</h3>
-						<p className=' cursor-pointer text-white'>
+						<p className=' hover:scale-125 transition ease-in-out delay-25 cursor-pointer text-white'>
 							<BsArrowsAngleExpand
 								className='hover:text-blue3'
 								size='20'></BsArrowsAngleExpand>
@@ -35,7 +36,7 @@ export default function SingleProject({
 				<div className='flex flex-col cursor-text '>
 					<div className='flex flex-row justify-between'>
 						<h3 className='font-bold text-blue3'> {name}</h3>
-						<p className=' cursor-pointer'>
+						<p className=' hover:scale-75 transition ease-in-out delay-25 cursor-pointer'>
 							<BsArrowsAngleExpand
 								className='hover:text-blue3'
 								size='20'></BsArrowsAngleExpand>

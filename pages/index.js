@@ -22,7 +22,7 @@ export default function Home() {
 			<Navbar />
 
 			<div className='h-full flex flex-col items-center w-full py-12 selection:bg-blue3 bg-black2'>
-				<main className='flex flex-col justify-start h-full md:w-3/5'>
+				<main className='flex flex-col justify-start h-full md:w-5/6 md:px-4'>
 					<header className='mx-4 md:mx-0'>
 						<h1 className='mb-4 text-5xl'>Welcome</h1>
 						<h1 className='mb-4 text-3xl'>
@@ -48,10 +48,10 @@ export default function Home() {
 						scene='https://prod.spline.design/6IcN6I8oOqHh40BT/scene.splinecode'
 					/>
 				</div>
-				<section className='mx-4 md:mx-0 md:w-3/5 my-24 '>
-					<article className=''>
+				<section className=' mx-4 md:mx-0 md:w-5/6 my-24 '>
+					<article className='md:flex md:items-center flex-col'>
 						<h2 className='mb-4 text-4xl text-blue3'> About Me</h2>
-						<p className='mb-4'>
+						<p className='mb-4 md:w-3/5'>
 							I'm a recent UC Irvine graduate with a B.A. degree in Business
 							Economics. I'm not afraid of failure as that's where true growth
 							flourishes. I'm highly motivated and a fast learner. I found a
@@ -61,7 +61,7 @@ export default function Home() {
 							to further advance my capabilities to see where my imagination
 							leads me.
 						</p>
-						<p className=''>
+						<p className='md:w-3/5'>
 							I strive to keep learning new things to not only apply to my
 							everyday life, but to constantly challenge what's possible. I try
 							to refrain from accepting one approach of doing something, but

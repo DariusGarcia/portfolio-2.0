@@ -23,7 +23,7 @@ const Navbar = () => {
 			className='bg-black2 shadow-lg py-3 border-darkGrey border-opacity-80 top-0 sticky z-50'>
 			{({ open }) => (
 				<div className='md:flex md:justify-center'>
-					<div className=' md:w-3/5 px-2 md:px-0'>
+					<div className='w-full  lg:w-5/6 px-2 md:pl-4 '>
 						<div className='relative flex items-center justify-between h-16'>
 							{/* Mobile menu button*/}
 							<div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
@@ -61,15 +61,15 @@ const Navbar = () => {
 									<div>
 										<Menu.Button className='bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white'>
 											<span className='sr-only'>Open user menu</span>
-											{/* <div className='flex items-center justify-center h-16 w-16 border-2 border-darkGrey hover:bg-darkGrey rounded-full font-bold hover:scale-110 transition ease-in-out delay-75'>
+											<div className='flex items-center justify-center h-16 w-16 border-2 border-darkGrey hover:bg-darkGrey rounded-full font-bold hover:scale-110 transition ease-in-out delay-75'>
 												<Spline
 													className='flex justify-center items-center pt-4 pr-2 rounded-full'
 													scene='https://prod.spline.design/R7z1cyl4nheotwR9/scene.splinecode'
 												/>
-											</div> */}
-											<div className='flex items-center text-blue3 justify-center h-16 w-16 border-2 border-darkGrey hover:bg-blue3 hover:text-white rounded-full font-bold hover:scale-110 transition ease-in-out delay-75'>
-												DG
 											</div>
+											{/* <div className='flex items-center text-blue3 justify-center h-16 w-16 border-2 border-darkGrey hover:bg-blue3 hover:text-white rounded-full font-bold hover:scale-110 transition ease-in-out delay-75'>
+												DG
+											</div> */}
 										</Menu.Button>
 									</div>
 									<Transition
