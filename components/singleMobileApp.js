@@ -19,7 +19,7 @@ export default function SingleProject({
 			}}
 			id={name}
 			key={name}
-			className='relative mb-4 md:mb-0 h-max p-4 border-2 hover:border-blue3 text-white border-darkGrey rounded-md transition ease-in-out delay-110 shadow-xl'>
+			className='relative mb-4 md:mb-0 min-h-96 h-max p-4 border-2 hover:border-blue3 text-white border-darkGrey rounded-md transition ease-in-out delay-110 shadow-xl'>
 			{!open ? (
 				<div className=''>
 					<div className='flex flex-row justify-between cursor-pointer'>
@@ -30,7 +30,7 @@ export default function SingleProject({
 								size='20'></BsArrowsAngleExpand>
 						</p>
 					</div>
-					<p className='w-max mt-2 text-darkGrey'>{description}</p>
+					<p className='mt-2 text-darkGrey'>{description}</p>
 				</div>
 			) : (
 				<div className='flex flex-col cursor-text '>
