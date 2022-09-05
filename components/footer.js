@@ -42,7 +42,7 @@ export default function Example() {
 				</nav>
 				<div className='mt-8 flex justify-center space-x-6'>
 					{navigation.social.map((item) => (
-						<Link href={item.href}>
+						<Link key={item.name} href={item.href}>
 							<a
 								target='_blank'
 								key={item.name}
