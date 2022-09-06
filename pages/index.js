@@ -52,23 +52,24 @@ export default function Home() {
 					<article className='md:flex md:items-center flex-col'>
 						<h2 className='mb-4 text-4xl text-blue3'> About Me</h2>
 						<p className='mb-4 md:w-3/5'>
-							I'm a recent UC Irvine graduate with a B.A. degree in Business
-							Economics. I'm not afraid of failure as that's where true growth
-							flourishes. I'm highly motivated and a fast learner. I found a
-							passion for programming due to having to think outside the box for
-							solving various real world problems and being able to let my
-							creativity run freely. I'm always trying to learn new technologies
-							to further advance my capabilities to see where my imagination
-							leads me.
+							I'm a 2022 UC Irvine graduate with a B.A. degree in Business
+							Economics. I'm a passionate front-end developer that is looking to
+							bring immediate value and positive attitude. I've played baseball
+							for most of my life, until my time came to an end during my first
+							couple of years in college. I recently started getting into golf
+							too, which is definitely a different pace from baseball. I'm not
+							the best at it, but trying to improve each time I played allowed
+							steady growth. I'm not afraid of failure as that's where I think
+							most of my best growth has come from. I'm highly motivated and a
+							fast learner.
 						</p>
 						<p className='md:w-3/5'>
-							I strive to keep learning new things to not only apply to my
-							everyday life, but to constantly challenge what's possible. I try
-							to refrain from accepting one approach of doing something, but
-							rather try to seek comfort in embracing the unknown to be able to
-							shed light on new solutions. I'm a problem solver that wants to
-							utilize my skills to help other people and to make the world a
-							better place for all.
+							I'm always trying to learn new technologies to further advance my
+							capabilities to see where my imagination leads me. I strive to
+							keep learning new things to not only apply to my everyday life,
+							but to constantly challenge what's possible. I'm a problem solver
+							that wants to utilize my skills to help other people and to make
+							the world a better place for all.
 						</p>
 					</article>
 				</section>

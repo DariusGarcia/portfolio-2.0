@@ -12,9 +12,9 @@ const Skills = () => {
 			<NavBar />
 			<main className='py-12 flex flex-col items-center  bg-black2'>
 				<div className='px-6 flex flex-col md:w-5/6 mb-8'>
-					<h1 className='text-4xl font-semibold mb-4'>Skills</h1>
-					<h2 className='text-lg font-semibold'>
-						Current tech stack that I use to develop my web applications:
+					<h1 className='text-3xl font-bold mb-4'>Skills</h1>
+					<h2 className='text-md font-semibold'>
+						Current tech stack that I use to develop web applications:
 					</h2>
 				</div>
 				<section className='md:w-5/6 md:px-6 grid grid-cols-2 md:grid-cols-4 gap-8 '>
@@ -27,7 +27,7 @@ const Skills = () => {
 					))}
 				</section>
 				<div className='px-6 flex flex-col md:w-5/6 mt-12'>
-					<h2 className='text-lg font-semibold mb-8'>
+					<h2 className='text-md font-semibold mb-8'>
 						Other technologies I have worked with in the past:
 					</h2>
 				</div>

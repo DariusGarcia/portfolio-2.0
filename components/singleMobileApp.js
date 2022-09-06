@@ -32,7 +32,7 @@ export default function SingleProject({
 						</p>
 					</div>
 					<p className='mt-2 px-2 text-darkGrey w-full'>{description}</p>
-					<div className='flex mt-2 flex-row items-center gap-2 hover:bg-blue3 hover:bg-opacity-40 rounded-lg p-2 w-max'>
+					<div className='flex flex-row items-center gap-2 hover:bg-blue3 hover:bg-opacity-40 rounded-lg p-2 w-max'>
 						<button className=' text-blue3'>
 							<Link href={link}>
 								<a target='_blank'>source code</a>

@@ -29,7 +29,7 @@ const Projects = () => {
 			<main className='flex justify-center mx-4 lg:mx-0 md:pt-12 mb-12 bg-black2 '>
 				<div className='md:grid md:grid-cols-3 w-full lg:w-5/6'>
 					<div>
-						<div className='md:fixed px-8 md:ml-4 pb-8 row-span-1 md:mt-4 flex flex-col items-center border-darkGrey md:border-[1px]  md:bg-opacity-20 md:mr-8 h-max  rounded-lg'>
+						<div className='md:fixed px-8 md:ml-4 pb-8 row-span-1 md:mt-4 flex flex-col items-center border-darkGrey md:border-[1px] md:bg-opacity-20 md:mr-8 h-max rounded-lg'>
 							<div className='flex flex-row gap-2 items-center mb-4 mt-4 md:mb-8'>
 								<h1 className=' text-3xl font-semibold'>Projects</h1>
 							</div>
@@ -65,7 +65,7 @@ const Projects = () => {
 									className={
 										!mobileOpen
 											? 'bg-darkGrey bg-opacity-50 text-sm w-full font-semibold p-4 rounded-lg transition ease-in-out delay-55 hover:scale-95 opacity-75'
-											: 'text-sm w-full font-semibold p-4 rounded-lg transition ease-in-out delay-55  hover:opacity-75 bg-blue3 bg-opacity-20 hover:bg-opacity-100 hover:text-white border-2 border-blue3 text-blue3 '
+											: 'text-sm w-full font-semibold p-4 rounded-lg transition ease-in-out delay-55 hover:opacity-75 bg-blue3 bg-opacity-20 hover:bg-opacity-100 hover:text-white border-2 border-blue3 text-blue3 '
 									}>
 									MOBILE APPS
 								</button>
