@@ -1,0 +1,37 @@
+const skills = {
+  current: [
+    'JavaScript (ES6)',
+    'React',
+    'Node.js',
+    'Mongoose',
+    'Sequelize',
+    'Express.js',
+    'MongoDB',
+    'MySQL',
+    'GraphQL',
+    'REST APIs',
+    'Tailwind CSS',
+    'Bootstrap',
+    'HTML5',
+    'SCSS',
+    'Next.js',
+    'CSS3',
+    'Jest',
+    'MVC Architecture ',
+    'TDD & Agile Methodologies',
+    'Heroku',
+    'Netlify',
+    'MongoDB Atlas',
+    'OOP',
+    'Service Workers',
+    'Handlebars',
+    'Webpack Bundler',
+    'Babel',
+    'Progressive Web Apps (PWA)',
+    'Single Page Apps (SPA)',
+  ],
+
+  previous: ['Python', 'Kotlin'],
+}
+
+export default skills
