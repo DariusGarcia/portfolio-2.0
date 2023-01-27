@@ -1,10 +1,20 @@
 // import mp4/gif media
 import fixit from './public/videos/fixitcredit.mp4'
-import bullbear from './public/videos/bullbear.mp4'
+// import bullbear from './public/videos/bullbear.mp4'
 import kvl from './public/videos/kvl.mp4'
 import tweeter from './public/videos/tweeter.gif'
 import instapic from './public/videos/instapic.gif'
 import flixter from './public/videos/flixter.gif'
+// import image assets
+import bookhub from './public/images/BookHub.png'
+import calendar from './public/images/calendar-scheduler.png'
+import contactPWA from './public/images/contact-PWA.png'
+import JATE from './public/images/JATE.png'
+import bullbear from './public/images/laptop.png'
+import foodAndNews from './public/images/food-and-news.png'
+import weatherDashboard from './public/images/weather-dashboard.png'
+import blogCMS from './public/images/blogCMS.png'
+import ecommerceAPI from './public/images/ecommerce-API.png'
 
 const projects = {
   webApps: [
@@ -22,7 +32,7 @@ const projects = {
       description:
         "J.A.T.E. is a progressive web app that lets users enters text into a text editor where the data persists even when offline. Utilizes service workers and webpack plugins to be able to store the data to the browser's indexDb and also be installable.",
       tech: 'React, Tailwind CSS, node.js, express.js, MongoDB, Context API, REST APIs, user Auth, JWT',
-      image: bullbear,
+      image: JATE,
       link: 'https://stark-basin-30756.herokuapp.com/',
       github: 'https://github.com/DariusGarcia/text-editor',
     },
@@ -31,7 +41,7 @@ const projects = {
       description:
         'Food & News is a web app that allows users to search for a wide range of recipes and news articles.',
       tech: 'Next.js, React, Tailwind CSS',
-      image: fixit,
+      image: foodAndNews,
       link: 'https://food-and-news.vercel.app/',
       github: 'https://github.com/DariusGarcia/food-and-news',
     },
@@ -40,7 +50,7 @@ const projects = {
       description:
         'BookHub is Node.js app that allows users to view books stored in our library database. They can add to their reading list or to just browse a variety of different books.',
       tech: 'Next.js, React, Tailwind CSS',
-      image: fixit,
+      image: bookhub,
       link: 'https://book-hub.herokuapp.com/',
       github: 'https://github.com/DariusGarcia/bookhub',
     },
@@ -57,7 +67,7 @@ const projects = {
       description:
         'PWA using Webpack and Babel that allows users to save contact info of people.',
       tech: 'Node.js, MongoDB, Rest API, Express.js, Progressive Web App, service workers, webpack',
-      image: fixit,
+      image: contactPWA,
       link: 'https://limitless-wave-70136.herokuapp.com/',
       github: 'https://github.com/DariusGarcia/contact-card-PWA',
     },
@@ -66,7 +76,7 @@ const projects = {
       description:
         'This express app acts as a server an ecommerce application that allows users to view all products, categories, and product tags. Utilizes mySQL.',
       tech: 'Next.js, React, Tailwind CSS',
-      image: fixit,
+      image: ecommerceAPI,
       link: 'https://github.com/DariusGarcia/ecommerce-server',
       github: 'https://github.com/DariusGarcia/ecommerce-server',
     },
@@ -75,7 +85,7 @@ const projects = {
       description:
         'CMS-style blog site where developers can publish their blog posts and comment on other developers’ posts as well.',
       tech: 'Next.js, React, Tailwind CSS',
-      image: fixit,
+      image: blogCMS,
       link: 'https://github.com/DariusGarcia/blog-CMS',
       github: 'https://github.com/DariusGarcia/blog-CMS',
     },
@@ -83,7 +93,7 @@ const projects = {
       name: 'Calendar Scheduler ',
       description: 'Web app where you can log events to a work calendar.',
       tech: 'Vanilla JavaScript, Local storage, HTML5, CSS3',
-      image: fixit,
+      image: calendar,
       link: 'https://dariusgarcia.github.io/calendar-scheduler/',
       github: 'https://github.com/DariusGarcia/calendar-scheduler',
     },
@@ -92,7 +102,7 @@ const projects = {
       description:
         "Freelance Next.js project for a client that lets customers send payments utilizing Stripe's payment API.",
       tech: 'Next.js, React, Tailwind CSS',
-      image: fixit,
+      image: weatherDashboard,
       link: 'https://dariusgarcia.github.io/weather-dashboard/',
       github: 'https://github.com/DariusGarcia/weather-dashboard',
     },
@@ -116,6 +126,9 @@ const projects = {
     },
   ],
 
+  /*
+   ** mobile apps
+   */
   mobileApps: [
     {
       name: 'Tweeter',
