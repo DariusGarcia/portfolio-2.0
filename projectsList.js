@@ -13,7 +13,7 @@ import JATE from './public/images/JATE.png'
 import bullbear from './public/images/laptop.png'
 import foodAndNews from './public/images/food-and-news.png'
 import weatherDashboard from './public/images/weather-dashboard.png'
-import blogCMS from './public/images/blogCMS.png'
+import blogCMS from './public/images/BlogCMS.png'
 import ecommerceAPI from './public/images/ecommerce-API.png'
 
 const projects = {
