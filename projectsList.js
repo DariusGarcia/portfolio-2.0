@@ -22,10 +22,10 @@ const projects = {
       name: 'BullBear Market',
       description:
         'Full-stack MERN web app that lets users add stocks from the S&P500 index to their own personal watch list.',
-      tech: 'React, Tailwind CSS, node.js, express.js, MongoDB, Context API, REST APIs, user Auth, JWT',
+      tech: 'React, TypeScript, Tailwind CSS, node.js, express.js, MongoDB, Context API, REST APIs, user Auth, JWT',
       image: bullbear,
       link: 'https://bullbearmarket.net/',
-      github: 'https://github.com/dariusgarcia/bullbear',
+      github: 'https://github.com/dariusgarcia/bullbear-TYPESCRIPT',
     },
     {
       name: 'J.A.T.E Text Editor',

@@ -1,5 +1,6 @@
 const skills = {
   current: [
+    'TypeScript',
     'JavaScript (ES6)',
     'React',
     'Node.js',
