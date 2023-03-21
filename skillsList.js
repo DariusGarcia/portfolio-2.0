@@ -13,6 +13,7 @@ const skills = {
     'REST APIs',
     'Tailwind CSS',
     'Bootstrap',
+    'Sanity.io CMS',
     'HTML5',
     'SCSS',
     'Next.js',
