@@ -15,6 +15,7 @@ import foodAndNews from './public/images/food-and-news.png'
 import weatherDashboard from './public/images/weather-dashboard.png'
 import blogCMS from './public/images/BlogCMS.png'
 import ecommerceAPI from './public/images/ecommerce-API.png'
+import imHungry from './public/images/im-hungry.png'
 
 const projects = {
   webApps: [
@@ -26,6 +27,15 @@ const projects = {
       image: bullbear,
       link: 'https://bullbearmarket.net/',
       github: 'https://github.com/dariusgarcia/bullbear-TYPESCRIPT',
+    },
+    {
+      name: "I'm Hungry",
+      description:
+        "I'm Hungry is a fullstack web app built with Next.js using MySQL as the database. It utilizes OpenAI's API to allow users to search for recipes based on different ingredients they have on hand.",
+      tech: 'React, Next.js, Tailwind CSS, MySQL, Sequelize ORM, REST APIs, user Auth, JWT',
+      image: imHungry,
+      link: '#',
+      github: 'https://github.com/monysary/i-m-hungry-recipe-app',
     },
     {
       name: 'J.A.T.E Text Editor',
@@ -126,8 +136,9 @@ const projects = {
     },
   ],
 
-  /*
-   ** mobile apps
+  /**
+   * mobile apps
+   *
    */
   mobileApps: [
     {
