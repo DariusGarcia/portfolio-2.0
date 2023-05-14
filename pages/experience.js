@@ -1,9 +1,14 @@
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 import ContactBtn from '../components/contactBtn'
+import Head from 'next/head'
+
 export default function Experience() {
   return (
     <>
+      <Head>
+        <title>Darius Garcia Jr - Experience</title>
+      </Head>
       <ContactBtn />
       <Navbar />
       <div className='bg-black2 py-12 px-2 md:px-0 sm:py-16'>
@@ -34,7 +39,7 @@ export default function Experience() {
                   </div>
                   <div className='group relative'>
                     <h3 className='mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600'>
-                      <p href={job.href}>
+                      <p>
                         <span className='absolute inset-0' />
                         {job.title}
                       </p>
@@ -69,7 +74,7 @@ const jobs = [
       'Learned to be flexible in adapting to new programs and handle new situations quickly that may arise',
     ],
     date: 'Mar 2023 - Present',
-    category: { title: 'Code Ninjas', href: '#' },
+    category: { title: 'Code Ninjas' },
   },
   {
     id: 2,
@@ -77,12 +82,12 @@ const jobs = [
     href: '#',
     description: [
       'Designed a visual and function user interface illustrating products and services using JS, HTML, and CSS',
-      'Created mobile responsive web pages and resusable components using React to increase user experience and engagement',
+      'Created mobile responsive web pages and reusable components using React to increase user experience and engagement',
       'Coordinated with different teams to ensure the quality of the product and to meet deadlines',
       'Established an initial website blueprint used in the final deployment of the website',
     ],
     date: 'June 2022 - Aug 2022',
-    category: { title: 'Green Market Ventures', href: '#' },
+    category: { title: 'Green Market Ventures' },
   },
   {
     id: 3,
@@ -96,6 +101,6 @@ const jobs = [
       'Received weekly satisfactory reports of being in the 90% percentile of most goods processed and delivered',
     ],
     date: 'April 2020 - May 2021',
-    category: { title: 'Amazon Fresh', href: '#' },
+    category: { title: 'Amazon Fresh' },
   },
 ]

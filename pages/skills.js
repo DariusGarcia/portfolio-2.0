@@ -8,7 +8,7 @@ const Skills = () => {
   return (
     <>
       <Head>
-        <title>skills</title>
+        <title>Darius Garcia Jr - Skills</title>
       </Head>
       <NavBar />
       <main className='py-12 flex flex-col items-center  bg-black2'>
