@@ -25,7 +25,7 @@ const navigation = {
 
 export default function Example() {
   return (
-    <footer className='bg-black2  border-t-[1px] border-darkGrey shadow-xl text-grey'>
+    <footer className='bg-black2  border-t-[1px] border-darkGrey text-grey h-full bottom-0'>
       <div className='mx-auto md:w-3/5 overflow-hidden py-12'>
         <nav
           className='-mx-5 -my-2 flex flex-wrap justify-center'

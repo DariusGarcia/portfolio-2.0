@@ -1,130 +1,94 @@
 import Image from 'next/image'
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+
 import Link from 'next/link'
 import Spline from '@splinetool/react-spline'
-
+import { useState } from 'react'
+import { Dialog } from '@headlessui/react'
+// import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { HiViewList, HiOutlineX } from 'react-icons/hi'
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Projects', href: '/projects' },
+  { name: 'Experience', href: '/experience' },
   { name: 'Skills', href: '/skills' },
   { name: 'Contact', href: '/contact' },
 ]
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
+export default function Navbar() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
-const Navbar = () => {
   return (
-    <Disclosure
-      as='nav'
-      className='bg-black2 shadow-lg py-3 border-darkGrey border-opacity-80 top-0 sticky z-50'
-    >
-      {({ open }) => (
-        <div className='md:flex md:justify-center'>
-          <div className='w-full  px-2 md:px-4 lg:w-5/6 md:pl-8 lg:pl-4 '>
-            <div className='relative flex items-center justify-between h-16'>
-              {/* Mobile menu button*/}
-              <div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
-                <Disclosure.Button className='inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-darkGrey focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'>
-                  <span className='sr-only'>Open main menu</span>
-                  {open ? (
-                    <XIcon className='block h-6 w-6' aria-hidden='true' />
-                  ) : (
-                    <MenuIcon className='block h-6 w-6' aria-hidden='true' />
-                  )}
-                </Disclosure.Button>
-              </div>
-              {/* Navbar links */}
-              <div className='flex-1 md:-ml-2 flex items-center justify-center sm:items-center sm:justify-start'>
-                <div className='flex-shrink-0 flex items-center'></div>
-                <div className='hidden sm:block '>
-                  <div className='flex space-x-4'>
-                    {navigation.map((item) => (
-                      <li
-                        key={item.name}
-                        className=' py-2 rounded-md text-sm font-medium list-none'
-                      >
-                        <Link href={item.href}>
-                          <a className='text-white hover:bg-blue3 hover:opacity-80 hover:text-black2 p-3 hover:shadow-xl hover:scale-110 transition ease-in-out rounded-lg'>
-                            {item.name}
-                          </a>
-                        </Link>
-                      </li>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <div className='absolute inset-y-0 right-0 flex h-max w-max items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
-                {/* Profile dropdown */}
-                <Menu as='div' className='ml-3 relative'>
-                  <div>
-                    <Menu.Button className='bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white'>
-                      <span className='sr-only'>Open user menu</span>
-                      <div className='flex items-center justify-center h-16 w-16 border-2 border-darkGrey hover:bg-darkGrey rounded-full font-bold hover:scale-110 transition ease-in-out delay-75'>
-                        <Spline
-                          className='flex justify-center items-center pt-4 pr-2 rounded-full'
-                          scene='https://prod.spline.design/R7z1cyl4nheotwR9/scene.splinecode'
-                        />
-                      </div>
-                      {/* <div className='flex items-center text-blue3 justify-center h-16 w-16 border-2 border-darkGrey hover:bg-blue3 hover:text-white rounded-full font-bold hover:scale-110 transition ease-in-out delay-75'>
-												DG
-											</div> */}
-                    </Menu.Button>
-                  </div>
-                  <Transition
-                    as={Fragment}
-                    enter='transition ease-out duration-100'
-                    enterFrom='transform opacity-0 scale-95'
-                    enterTo='transform opacity-100 scale-100'
-                    leave='transition ease-in duration-75'
-                    leaveFrom='transform opacity-100 scale-100'
-                    leaveTo='transform opacity-0 scale-95'
+    <header className='bg-gray-500'>
+      <nav
+        className='mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8'
+        aria-label='Global'
+      >
+        <div className='flex lg:flex-1'></div>
+        <div className='flex lg:hidden'>
+          <button
+            type='button'
+            className='-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700'
+            onClick={() => setMobileMenuOpen(true)}
+          >
+            <span className='sr-only'>Open main menu</span>
+            <HiViewList size={30} />
+          </button>
+        </div>
+        <div className='hidden lg:flex lg:gap-x-12'>
+          {navigation.map((item) => (
+            <a
+              key={item.name}
+              href={item.href}
+              className='text-sm font-semibold leading-6 hover:bg-blue3 hover:bg-opacity-80 p-2 rounded-md'
+            >
+              {item.name}
+            </a>
+          ))}
+        </div>
+        <div className='hidden lg:flex lg:flex-1 lg:justify-end'>
+          {/* <a href='#' className='text-sm font-semibold leading-6 text-gray-900'>
+            Darius <span aria-hidden='true'>&rarr;</span>
+          </a> */}
+        </div>
+      </nav>
+      <Dialog
+        as='div'
+        className='lg:hidden'
+        open={mobileMenuOpen}
+        onClose={setMobileMenuOpen}
+      >
+        <div className='fixed inset-0 z-10' />
+        <Dialog.Panel className='fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-black2 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10'>
+          <div className='flex items-center justify-between'>
+            <button
+              type='button'
+              className='-m-2.5 rounded-md p-2.5 text-gray-700 '
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <span className='sr-only'>Close menu</span>
+              {/* <XMarkIcon className='h-6 w-6' aria-hidden='true' /> */}
+              <HiOutlineX size={30} />
+            </button>
+          </div>
+          <div className='mt-6 flow-root'>
+            <div className='-my-6 divide-y divide-gray-500/10'>
+              <div className='space-y-2 py-6'>
+                {navigation.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'
                   >
-                    <Menu.Items className='origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-grey ring-1 ring-black ring-opacity-5 focus:outline-none'>
-                      <Menu.Item>
-                        <Link href='/api/resume'>
-                          <a
-                            target='_blank'
-                            className='block px-4 py-2 text-sm text-gray-700 hover:border-b-2 w-max  hover:border-white transition delay-75 ease-in-out'
-                          >
-                            Resume
-                          </a>
-                        </Link>
-                      </Menu.Item>
-                    </Menu.Items>
-                  </Transition>
-                </Menu>
+                    {item.name}
+                  </a>
+                ))}
               </div>
             </div>
           </div>
-
-          <Disclosure.Panel className='sm:hidden'>
-            <div className='px-2 pt-2 pb-3 space-y-1'>
-              {navigation.map((item) => (
-                <Disclosure.Button
-                  key={item.name}
-                  as='a'
-                  href={item.href}
-                  className={classNames(
-                    item.current
-                      ? 'bg-gray-900 text-white'
-                      : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block px-3 py-2 rounded-md text-base font-medium'
-                  )}
-                  aria-current={item.current ? 'page' : undefined}
-                >
-                  {item.name}
-                </Disclosure.Button>
-              ))}
-            </div>
-          </Disclosure.Panel>
-        </div>
-      )}
-    </Disclosure>
+        </Dialog.Panel>
+      </Dialog>
+    </header>
   )
 }
-
-export default Navbar
