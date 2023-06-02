@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { GrExpand, GrGithub } from 'react-icons/gr'
 import { BsArrowsAngleExpand, BsGithub } from 'react-icons/bs'
+import { motion as m } from 'framer-motion'
 
 export default function SingleWebsite({
   name,
@@ -14,17 +15,35 @@ export default function SingleWebsite({
 }) {
   const [open, setOpen] = useState(false)
 
+  const cardVariants = {
+    offscreen: {
+      y: 200,
+    },
+    onscreen: {
+      y: 0,
+
+      transition: {
+        type: 'spring',
+        bounce: 0.4,
+        duration: 0.8,
+      },
+    },
+  }
+
   return (
-    <article
+    <m.article
+      initial='offscreen'
+      whileInView='onscreen'
+      viewport={{ once: true, amount: 0.8 }}
       onClick={() => {
         setOpen(!open)
       }}
       id={name}
       key={name}
-      className='relative mb-4 md:mb-0 min-h-96 h-max p-4 border-[1px] hover:border-blue3 text-white border-darkGrey rounded-md transition hover:bg-opacity-20 ease-in-out delay-110 shadow-xl'
+      className='relative mb-4 overflow-hidden md:mb-0 min-h-96 h-max p-4 border-[1px] hover:border-blue3 text-white border-darkGrey rounded-md transition hover:bg-opacity-20 ease-in-out delay-110 shadow-xl'
     >
       {!open ? (
-        <div className=''>
+        <m.div variants={cardVariants} className=''>
           <div className='flex flex-row px-2 justify-between'>
             <h3 className='text-xl font-bold'> {name}</h3>
             <p className='hover:scale-125 transition ease-in-out delay-25 cursor-pointer text-white'>
@@ -50,9 +69,12 @@ export default function SingleWebsite({
               </a>
             </Link>
           </div>
-        </div>
+        </m.div>
       ) : (
-        <div className=' top-20 flex flex-col cursor-text '>
+        <m.div
+          variants={cardVariants}
+          className=' top-20 flex flex-col cursor-text '
+        >
           <div className='flex flex-row justify-between'>
             <h3 className='text-xl font-bold ml-2'> {name}</h3>
 
@@ -91,8 +113,8 @@ export default function SingleWebsite({
 							<source src={image} />
 						</video> */}
           </div>
-        </div>
+        </m.div>
       )}
-    </article>
+    </m.article>
   )
 }

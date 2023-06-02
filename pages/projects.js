@@ -1,12 +1,10 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Head from 'next/head'
-// import components
 import Navbar from '../components/navbar'
 import SingleWebsite from '../components/singleWebsite'
 import SingleMobileApp from '../components/singleMobileApp'
 import ContactBtn from '../components/contactBtn'
 import Footer from '../components/footer'
-// import react icons
 import { MdComputer, MdPhoneIphone } from 'react-icons/md'
 import projects from '../projectsList'
 
@@ -78,7 +76,7 @@ const Projects = () => {
             </div>
             {/*  2nd column of the on medium sized screen grid container */}
             {/* containers the individual projects to be displayed */}
-            <div className=' row-span-2 col-span-2 overflow-auto md:mr-2'>
+            <div className=' row-span-2 col-span-2  md:mr-2'>
               <header className='mb-8 md:mb-12'>
                 <p className='mt-2 md:text-lg '>
                   Here are some of the recent projects I have completed.
@@ -86,7 +84,7 @@ const Projects = () => {
               </header>
               {websiteOpen ? (
                 <section className=''>
-                  <div className='flex flex-row items-star gap-4'>
+                  <div className='flex flex-row items-start gap-4'>
                     <h2 className=' text-xl font-bold md:text-2xl mb-4'>
                       WEBSITES AND WEB APPS
                     </h2>
@@ -95,7 +93,7 @@ const Projects = () => {
                     </span>
                   </div>
                   <div className='flex flex-col md:gap-8 justify-between cursor-pointer mb-24'>
-                    {projects.webApps.map((project) => (
+                    {projects?.webApps?.map((project) => (
                       <SingleWebsite
                         key={project.name}
                         name={project.name}
@@ -111,7 +109,7 @@ const Projects = () => {
                 </section>
               ) : (
                 <section className=''>
-                  <div className='flex flex-row items-star gap-2'>
+                  <div className='flex flex-row items-start gap-4'>
                     <h2 className='text-xl md:text-2xl mb-4 font-bold'>
                       MOBILE APPS
                     </h2>
@@ -121,7 +119,7 @@ const Projects = () => {
                     ></MdPhoneIphone>
                   </div>
                   <div className='flex flex-col md:gap-8 justify-between cursor-pointer mb-24'>
-                    {projects.mobileApps.map((project) => (
+                    {projects?.mobileApps?.map((project) => (
                       <SingleMobileApp
                         key={project.name}
                         name={project.name}

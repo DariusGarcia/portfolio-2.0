@@ -14,7 +14,7 @@
     "@heroicons/react": "^1.0.6",
     "@splinetool/react-spline": "^2.2.1",
     "@splinetool/runtime": "^0.9.103",
-    "framer-motion": "^7.2.1",
+    "framer-motion": "^7.10.3",
     "next": "12.2.5",
     "next-videos": "1.5.0",
     "react": "^18.2.0",
