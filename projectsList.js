@@ -16,9 +16,30 @@ import weatherDashboard from './public/images/weather-dashboard.png'
 import blogCMS from './public/images/BlogCMS.png'
 import ecommerceAPI from './public/images/ecommerce-API.png'
 import imHungry from './public/images/im-hungry.png'
+import firstProperty from './public/images/first-property.png'
+import bankroll from './public/images/bankroll.png'
+import nutrivalue from './public/images/nutrivalue.png'
 
 const projects = {
   webApps: [
+    {
+      name: 'First Property',
+      description:
+        'Full-stack Next.js app with a Supabase DB backend. First Property is a startup idea where clients can see pending permits in the surrounding area for home building projects. ',
+      tech: 'React, Next.js, JavaScript, Google Maps API, Supabase DB, Tailwind CSS, user Auth, JWT',
+      image: firstProperty,
+      link: 'https://first-property.vercel.app/',
+      github: 'https://github.com/dariusgarcia/first-property',
+    },
+    {
+      name: 'Bankroll',
+      description:
+        'Full-stack React web app with a Node.js backend server that lets users keep track of their gambling wins and losses. Uses mySQL as the database.',
+      tech: 'React, TypeScript, Tailwind CSS, node.js, express.js, mySQL, SQL, REST APIs, user Auth, JWT, Chart.js',
+      image: bankroll,
+      link: 'https://bankroll.vercel.app/',
+      github: 'https://github.com/DariusGarcia/gambling-tracker',
+    },
     {
       name: 'BullBear Market',
       description:
@@ -27,6 +48,15 @@ const projects = {
       image: bullbear,
       link: 'https://bullbearmarket.net/',
       github: 'https://github.com/dariusgarcia/bullbear-TYPESCRIPT',
+    },
+    {
+      name: 'NutriValue',
+      description:
+        'Full-stack Next.js app that lets users keep track of their daily calories, search recipes, and add their own recipes. Express.js + mySQL backend.',
+      tech: 'React, TypeScript, Next,js, Tailwind CSS, node.js, express.js, mySQL, REST APIs, user Auth, JWT',
+      image: nutrivalue,
+      link: 'https://nutrivalue.vercel.app/',
+      github: 'https://github.com/DariusGarcia/nutrivalue',
     },
     {
       name: "I'm Hungry",
