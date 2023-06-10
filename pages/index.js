@@ -3,8 +3,8 @@ import Link from 'next/link'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 import ContactBtn from '../components/contactBtn'
-import PageWrapper from '../components/framer-motion/page-wrapper'
 import { motion as m, AnimatePresence } from 'framer-motion'
+import { BsLinkedin, BsGithub } from 'react-icons/bs'
 
 export default function Landing() {
   const cardVariants = {
@@ -53,19 +53,29 @@ export default function Landing() {
                     coding instructor for Code Ninjas. I enjoy making fully
                     responsive and elegant web apps.
                   </p>
-                  <div className='mt-10 flex items-center justify-center gap-x-6'>
-                    <Link
-                      href='/projects'
-                      className='rounded-md px-3.5 py-2.5 text-sm font-semibold text-white  shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
-                    >
-                      Projects
-                    </Link>
-                    <Link
-                      href='/experience'
-                      className='text-sm font-semibold leading-6 '
-                    >
-                      Experience →
-                    </Link>
+                  <div className='flex flex-col  gap-6 mt-10 items-center justify-center gap-x-6'>
+                    <section className='flex flex-row gap-6'>
+                      <Link
+                        href='/projects'
+                        className='rounded-md px-3.5 py-2.5 text-sm font-semibold text-white  shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+                      >
+                        Projects
+                      </Link>
+                      <Link
+                        href='/experience'
+                        className='text-sm font-semibold leading-6 '
+                      >
+                        Experience →
+                      </Link>
+                    </section>
+                    <button>
+                      <Link href='https://github.com/dariusgarcia'>
+                        <BsGithub
+                          size={20}
+                          className='text-blue3 hover:opacity-70 transition ease-out'
+                        />
+                      </Link>
+                    </button>
                   </div>
                 </div>
               </div>

@@ -31,15 +31,15 @@ const projects = {
       link: 'https://first-property.vercel.app/',
       github: 'https://github.com/dariusgarcia/first-property',
     },
-    {
-      name: 'Bankroll',
-      description:
-        'Full-stack React web app with a Node.js backend server that lets users keep track of their gambling wins and losses. Uses mySQL as the database.',
-      tech: 'React, TypeScript, Tailwind CSS, node.js, express.js, mySQL, SQL, REST APIs, user Auth, JWT, Chart.js',
-      image: bankroll,
-      link: 'https://bankroll.vercel.app/',
-      github: 'https://github.com/DariusGarcia/gambling-tracker',
-    },
+    // {
+    //   name: 'Bankroll',
+    //   description:
+    //     'Full-stack React web app with a Node.js backend server that lets users keep track of their gambling wins and losses. Uses mySQL as the database.',
+    //   tech: 'React, TypeScript, Tailwind CSS, node.js, express.js, mySQL, SQL, REST APIs, user Auth, JWT, Chart.js',
+    //   image: bankroll,
+    //   link: 'https://bankroll.vercel.app/',
+    //   github: 'https://github.com/DariusGarcia/gambling-tracker',
+    // },
     {
       name: 'BullBear Market',
       description:
@@ -50,15 +50,6 @@ const projects = {
       github: 'https://github.com/dariusgarcia/bullbear-TYPESCRIPT',
     },
     {
-      name: 'NutriValue',
-      description:
-        'Full-stack Next.js app that lets users keep track of their daily calories, search recipes, and add their own recipes. Express.js + mySQL backend.',
-      tech: 'React, TypeScript, Next,js, Tailwind CSS, node.js, express.js, mySQL, REST APIs, user Auth, JWT',
-      image: nutrivalue,
-      link: 'https://nutrivalue.vercel.app/',
-      github: 'https://github.com/DariusGarcia/nutrivalue',
-    },
-    {
       name: "I'm Hungry",
       description:
         "I'm Hungry is a fullstack web app built with Next.js using MySQL as the database. It utilizes OpenAI's API to allow users to search for recipes based on different ingredients they have on hand.",
@@ -66,6 +57,15 @@ const projects = {
       image: imHungry,
       link: '#',
       github: 'https://github.com/monysary/i-m-hungry-recipe-app',
+    },
+    {
+      name: 'NutriValue',
+      description:
+        'Full-stack Next.js app that lets users keep track of their daily calories, search recipes, and add their own recipes. Express.js + mySQL backend.',
+      tech: 'React, TypeScript, Next,js, Tailwind CSS, node.js, express.js, mySQL, REST APIs, user Auth, JWT',
+      image: nutrivalue,
+      link: 'https://nutrivalue.vercel.app/',
+      github: 'https://github.com/DariusGarcia/nutrivalue',
     },
     {
       name: 'J.A.T.E Text Editor',

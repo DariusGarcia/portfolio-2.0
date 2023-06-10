@@ -69,25 +69,13 @@ const jobs = [
     title: 'Coding Instructor',
     href: '#',
     description: [
+      ' Curated a web developing lesson plan that teaches kids the fundamentals of JS, CSS, and HTML',
       'Instruct kids (ages 5-14) to code through their love of video games and technology utilizing technologies such as JavaScript, C#, Unity, and Lua',
       'Lead coding camps at Sherman Oaks Elementary Schools to help students learn a wide variety of curriculum',
       'Learned to be flexible in adapting to new programs and handle new situations quickly that may arise',
     ],
     date: 'Mar 2023 - Present',
     category: { title: 'Code Ninjas' },
-  },
-  {
-    id: 2,
-    title: 'Frontend Developer Intern',
-    href: '#',
-    description: [
-      'Designed a visual and function user interface illustrating products and services using JS, HTML, and CSS',
-      'Created mobile responsive web pages and reusable components using React to increase user experience and engagement',
-      'Coordinated with different teams to ensure the quality of the product and to meet deadlines',
-      'Established an initial website blueprint used in the final deployment of the website',
-    ],
-    date: 'June 2022 - Aug 2022',
-    category: { title: 'Green Market Ventures' },
   },
   {
     id: 3,
