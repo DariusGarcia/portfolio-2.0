@@ -13,24 +13,23 @@ const skills = {
     'MySQL',
     'MongoDB',
     'Mongoose',
-    'GraphQL',
     'REST APIs',
     'Bootstrap',
     'Sanity.io CMS',
     'SCSS',
+    'AWS RDS',
     'Jest',
     'MVC Architecture ',
     'TDD & Agile Methodologies',
     'Heroku',
-    'Netlify',
     'MongoDB Atlas',
-    'OOP',
     'Handlebars',
     'Webpack Bundler',
     'Babel',
   ],
 
-  previous: ['Python', 'Kotlin'],
+  // previous: ['Python', 'Kotlin'],
+  previous: [],
 }
 
 export default skills
