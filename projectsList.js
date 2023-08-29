@@ -22,15 +22,6 @@ import nutrivalue from './public/images/nutrivalue.png'
 
 const projects = {
   webApps: [
-    {
-      name: 'First Property',
-      description:
-        'Full-stack Next.js app with a Supabase DB backend. First Property is a startup idea where clients can see pending permits in the surrounding area for home building projects. ',
-      tech: 'React, Next.js, JavaScript, Google Maps API, Supabase DB, Tailwind CSS, user Auth, JWT',
-      image: firstProperty,
-      link: 'https://first-property.vercel.app/',
-      github: 'https://github.com/dariusgarcia/first-property',
-    },
     // {
     //   name: 'Bankroll',
     //   description:
@@ -59,14 +50,23 @@ const projects = {
       github: 'https://github.com/monysary/i-m-hungry-recipe-app',
     },
     {
-      name: 'NutriValue',
+      name: 'First Property',
       description:
-        'Full-stack Next.js app that lets users keep track of their daily calories, search recipes, and add their own recipes. Express.js + mySQL backend.',
-      tech: 'React, TypeScript, Next,js, Tailwind CSS, node.js, express.js, mySQL, REST APIs, user Auth, JWT',
-      image: nutrivalue,
-      link: 'https://nutrivalue.vercel.app/',
-      github: 'https://github.com/DariusGarcia/nutrivalue',
+        'Full-stack Next.js app with a Supabase DB backend. First Property is a startup idea where clients can see pending permits in the surrounding area for home building projects. ',
+      tech: 'React, Next.js, JavaScript, Google Maps API, Supabase DB, Tailwind CSS, user Auth, JWT',
+      image: firstProperty,
+      link: 'https://first-property.vercel.app/',
+      github: 'https://github.com/dariusgarcia/first-property',
     },
+    // {
+    //   name: 'NutriValue',
+    //   description:
+    //     'Full-stack Next.js app that lets users keep track of their daily calories, search recipes, and add their own recipes. Express.js + mySQL backend.',
+    //   tech: 'React, TypeScript, Next,js, Tailwind CSS, node.js, express.js, mySQL, REST APIs, user Auth, JWT',
+    //   image: nutrivalue,
+    //   link: 'https://nutrivalue.vercel.app/',
+    //   github: 'https://github.com/DariusGarcia/nutrivalue',
+    // },
     {
       name: 'J.A.T.E Text Editor',
       description:
@@ -102,15 +102,15 @@ const projects = {
       link: 'https://book-hub.herokuapp.com/',
       github: 'https://github.com/DariusGarcia/bookhub',
     },
-    {
-      name: 'Contact Card PWA',
-      description:
-        'PWA using Webpack and Babel that allows users to save contact info of people.',
-      tech: 'Node.js, MongoDB, Rest API, Express.js, Progressive Web App, service workers, webpack',
-      image: contactPWA,
-      link: 'https://limitless-wave-70136.herokuapp.com/',
-      github: 'https://github.com/DariusGarcia/contact-card-PWA',
-    },
+    // {
+    //   name: 'Contact Card PWA',
+    //   description:
+    //     'PWA using Webpack and Babel that allows users to save contact info of people.',
+    //   tech: 'Node.js, MongoDB, Rest API, Express.js, Progressive Web App, service workers, webpack',
+    //   image: contactPWA,
+    //   link: 'https://limitless-wave-70136.herokuapp.com/',
+    //   github: 'https://github.com/DariusGarcia/contact-card-PWA',
+    // },
     {
       name: 'Ecommerce Express Server',
       description:
@@ -120,15 +120,15 @@ const projects = {
       link: 'https://github.com/DariusGarcia/ecommerce-server',
       github: 'https://github.com/DariusGarcia/ecommerce-server',
     },
-    {
-      name: 'Blog Content Management System (CMS)',
-      description:
-        'CMS-style blog site where developers can publish their blog posts and comment on other developers’ posts as well.',
-      tech: 'Next.js, React, Tailwind CSS',
-      image: blogCMS,
-      link: 'https://github.com/DariusGarcia/blog-CMS',
-      github: 'https://github.com/DariusGarcia/blog-CMS',
-    },
+    // {
+    //   name: 'Blog Content Management System (CMS)',
+    //   description:
+    //     'CMS-style blog site where developers can publish their blog posts and comment on other developers’ posts as well.',
+    //   tech: 'Next.js, React, Tailwind CSS',
+    //   image: blogCMS,
+    //   link: 'https://github.com/DariusGarcia/blog-CMS',
+    //   github: 'https://github.com/DariusGarcia/blog-CMS',
+    // },
     {
       name: 'Calendar Scheduler ',
       description: 'Web app where you can log events to a work calendar.',
@@ -161,7 +161,7 @@ const projects = {
         "Freelance marketing website for a small business that's built with Next.js.",
       tech: 'Next.js, React, Tailwind CSS',
       image: kvl,
-      link: 'https://kvl-communications.com/',
+      link: 'https://kvlcommunications.com/',
       github: 'https://github.com/dariusgarcia/',
     },
   ],
