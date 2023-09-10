@@ -46,18 +46,18 @@ const projects = {
         "I'm Hungry is a fullstack web app built with Next.js using MySQL as the database. It utilizes OpenAI's API to allow users to search for recipes based on different ingredients they have on hand.",
       tech: 'React, Next.js, Tailwind CSS, MySQL, Sequelize ORM, REST APIs, user Auth, JWT',
       image: imHungry,
-      link: '#',
+      link: 'https://imhungry.herokuapp.com/',
       github: 'https://github.com/monysary/i-m-hungry-recipe-app',
     },
-    {
-      name: 'First Property',
-      description:
-        'Full-stack Next.js app with a Supabase DB backend. First Property is a startup idea where clients can see pending permits in the surrounding area for home building projects. ',
-      tech: 'React, Next.js, JavaScript, Google Maps API, Supabase DB, Tailwind CSS, user Auth, JWT',
-      image: firstProperty,
-      link: 'https://first-property.vercel.app/',
-      github: 'https://github.com/dariusgarcia/first-property',
-    },
+    // {
+    //   name: 'First Property',
+    //   description:
+    //     'Full-stack Next.js app with a Supabase DB backend. First Property is a startup idea where clients can see pending permits in the surrounding area for home building projects. ',
+    //   tech: 'React, Next.js, JavaScript, Google Maps API, Supabase DB, Tailwind CSS, user Auth, JWT',
+    //   image: firstProperty,
+    //   link: 'https://first-property.vercel.app/',
+    //   github: 'https://github.com/dariusgarcia/first-property',
+    // },
     // {
     //   name: 'NutriValue',
     //   description:
@@ -130,7 +130,7 @@ const projects = {
     //   github: 'https://github.com/DariusGarcia/blog-CMS',
     // },
     {
-      name: 'Calendar Scheduler ',
+      name: 'Calendar Scheduler',
       description: 'Web app where you can log events to a work calendar.',
       tech: 'Vanilla JavaScript, Local storage, HTML5, CSS3',
       image: calendar,
