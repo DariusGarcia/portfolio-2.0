@@ -73,19 +73,19 @@ export default function Contact() {
                     <div className='mt-3'>
                       <dt className='sr-only'>Email</dt>
                       <dd className='flex'>
-                        <BsGithub
+                        <MdOutlineMarkEmailRead
                           className='h-6 w-6 flex-shrink-0 text-gray-400'
                           aria-hidden='true'
                         />
                         <span className='ml-3 text-blue3'>
-                          dariusgarcia@hotmail.com
+                          dariusgarcia8@outlook.com
                         </span>
                       </dd>
                     </div>
                     <div className='mt-3'>
                       <dt className='sr-only'>Github Link</dt>
                       <dd className='flex'>
-                        <MdOutlineMarkEmailRead
+                        <BsGithub
                           className='h-6 w-6 flex-shrink-0 text-gray-400'
                           aria-hidden='true'
                         />
@@ -106,8 +106,7 @@ export default function Contact() {
                   <form
                     ref={form}
                     onSubmit={sendEmail}
-                    className='grid grid-cols-1 gap-y-6'
-                  >
+                    className='grid grid-cols-1 gap-y-6'>
                     <div>
                       <label htmlFor='full-name' className='sr-only'>
                         Full name
@@ -152,8 +151,7 @@ export default function Contact() {
                       <button
                         type='submit'
                         value='Send'
-                        className='inline-flex justify-center  rounded-md border-transparent bg-blue3 bg-opacity-20 border-2 border-blue3 text-blue3 transition ease-in-out delay-100 hover:scale-95 hover:bg-opacity-100 hover:text-white py-3 px-16 text-base font-medium  shadow-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
-                      >
+                        className='inline-flex justify-center  rounded-md border-transparent bg-blue3 bg-opacity-20 border-2 border-blue3 text-blue3 transition ease-in-out delay-100 hover:scale-95 hover:bg-opacity-100 hover:text-white py-3 px-16 text-base font-medium  shadow-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'>
                         Submit
                       </button>
                     </div>
