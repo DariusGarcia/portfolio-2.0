@@ -20,17 +20,15 @@ export default function Experience() {
             <p className='mt-2 text-lg leading-8 text-gray-600'>
               My current and past work experience
             </p>
-            <div className='mt-10 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16'>
+            <div className='mt-10 space-y-16 border-t border-gray-200 pt-10 sm:mt-12 sm:pt-12'>
               {jobs.map((job) => (
                 <article
                   key={job.id}
-                  className='flex max-w-xl flex-col items-start justify-between'
-                >
+                  className='flex max-w-xl flex-col items-start justify-between'>
                   <div className='flex items-center gap-x-4 text-md'>
                     <p
                       href={job.category.href}
-                      className='relative z-10 rounded-full bg-gray-50 py-1.5 font-medium text-blue3 hover:bg-gray-100'
-                    >
+                      className='relative z-10 rounded-full bg-gray-50 py-1.5 font-medium text-blue3 hover:bg-gray-100'>
                       {job.category.title}
                     </p>
                     <time dateTime={job.datetime} className='text-sm'>
@@ -76,6 +74,18 @@ const jobs = [
     ],
     date: 'Mar 2023 - Present',
     category: { title: 'Code Ninjas' },
+  },
+  {
+    id: 2,
+    title: 'Freelance Web Developer',
+    href: '#',
+    description: [
+      'Collaborated with clients to define project requirements, objectives, and scope, ensuring a clear understanding of their vision and goals.',
+      'Designed, developed, tested, and deployed responsive and user-friendly websites using JavaScript, HTML, CSS and other front-end and back-end libraries.',
+      ' Leveraged strong problem-solving skills to address technical challenges and find innovating solutions that aligned with clients’ goals.',
+    ],
+    date: 'Mar 2022 - Mar 2023',
+    category: { title: 'Freelance' },
   },
   {
     id: 3,

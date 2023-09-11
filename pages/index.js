@@ -36,35 +36,31 @@ export default function Landing() {
             initial='hidden'
             animate='visible'
             viewport={{ once: true, amount: 0.8 }}
-            className='relative isolate px-6 md:pt-56 lg:px-8 bg-black2 h-screen'
-          >
+            className='relative isolate px-6 md:pt-56 lg:px-8 bg-black2 h-screen'>
             <m.div variants={cardVariants}>
               <div
                 className='absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80'
-                aria-hidden='true'
-              ></div>
+                aria-hidden='true'></div>
               <div className='mx-auto max-w-2xl py-32 lg:py-0'>
                 <div className='text-center'>
                   <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
-                    Darius Garcia Jr
+                    Darius Garcia Jr.
                   </h1>
                   <p className='mt-6 text-lg leading-8 text-gray-600'>
                     I'm an aspiring frontend developer. I currently work as a
                     coding instructor for Code Ninjas. I enjoy making fully
-                    responsive and elegant web apps.
+                    responsive and elegant web apps and websites.
                   </p>
                   <div className='flex flex-col  gap-6 mt-10 items-center justify-center gap-x-6'>
                     <section className='flex flex-row gap-6'>
                       <Link
                         href='/projects'
-                        className='rounded-md px-3.5 py-2.5 text-sm font-semibold text-white  shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
-                      >
+                        className='rounded-md px-3.5 py-2.5 text-sm font-semibold text-white  shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'>
                         Projects
                       </Link>
                       <Link
                         href='/experience'
-                        className='text-sm font-semibold leading-6 '
-                      >
+                        className='text-sm font-semibold leading-6 '>
                         Experience →
                       </Link>
                     </section>
