@@ -95,6 +95,24 @@ const projects = {
       github: 'https://github.com/DariusGarcia/bookhub',
     },
     {
+      name: 'Fix It Credit Inc.',
+      description:
+        "Freelance Next.js project for a client that lets customers send payments utilizing Stripe's payment API.",
+      tech: 'Next.js, React, Tailwind CSS',
+      image: fixit,
+      link: 'https://fixitcreditinc.com/',
+      github: 'https://github.com/dariusgarcia/fixitcreditinc',
+    },
+    {
+      name: 'KVL Communications',
+      description:
+        "Freelance marketing website for a small business that's built with Next.js.",
+      tech: 'Next.js, React, Tailwind CSS',
+      image: kvl,
+      link: 'https://kvlcommunications.com/',
+      github: 'https://github.com/dariusgarcia/',
+    },
+    {
       name: 'Social Network API',
       description: 'Express.js/ MongoDB backend server for a social network.',
       tech: 'Node.js, MongoDB, Rest API, Express.js',
@@ -145,24 +163,6 @@ const projects = {
       image: weatherDashboard,
       link: 'https://dariusgarcia.github.io/weather-dashboard/',
       github: 'https://github.com/DariusGarcia/weather-dashboard',
-    },
-    {
-      name: 'Fix It Credit Inc.',
-      description:
-        "Freelance Next.js project for a client that lets customers send payments utilizing Stripe's payment API.",
-      tech: 'Next.js, React, Tailwind CSS',
-      image: fixit,
-      link: 'https://fixitcreditinc.com/',
-      github: 'https://github.com/dariusgarcia/fixitcreditinc',
-    },
-    {
-      name: 'KVL Communications',
-      description:
-        "Freelance marketing website for a small business that's built with Next.js.",
-      tech: 'Next.js, React, Tailwind CSS',
-      image: kvl,
-      link: 'https://kvlcommunications.com/',
-      github: 'https://github.com/dariusgarcia/',
     },
   ],
 
