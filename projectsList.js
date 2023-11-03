@@ -19,6 +19,7 @@ import imHungry from './public/images/im-hungry.png'
 import firstProperty from './public/images/first-property.png'
 import bankroll from './public/images/bankroll.png'
 import nutrivalue from './public/images/nutrivalue.png'
+import regionIntelligence from './public/images/region-intelligence.png'
 
 const projects = {
   webApps: [
@@ -31,6 +32,15 @@ const projects = {
     //   link: 'https://bankroll.vercel.app/',
     //   github: 'https://github.com/DariusGarcia/gambling-tracker',
     // },
+    {
+      name: 'Region Intelligence',
+      description:
+        'Full-stack Next.js app with a AWS RDS backend. Region Intelligence is a startup where clients can see detailed parcel data, site planning insights, and up-to-date licenses across Southern California municipalities. Serving Real-Estate Developers, City Planner Offices, and enthusiasts with comprehensive data on Development Projects and more. ',
+      tech: 'React, Next.js, JavaScript, Esri AcrGis Pro mapping software, AWS RDS, Supabase DB, Sanity.io CMS, Tailwind CSS, user Auth, JWT',
+      image: regionIntelligence,
+      link: 'https://regionintelligence.com/',
+      github: 'https://github.com/dariusgarcia/first-property',
+    },
     {
       name: 'BullBear Market',
       description:
@@ -49,15 +59,6 @@ const projects = {
       link: 'https://imhungry.herokuapp.com/',
       github: 'https://github.com/monysary/i-m-hungry-recipe-app',
     },
-    // {
-    //   name: 'First Property',
-    //   description:
-    //     'Full-stack Next.js app with a Supabase DB backend. First Property is a startup idea where clients can see pending permits in the surrounding area for home building projects. ',
-    //   tech: 'React, Next.js, JavaScript, Google Maps API, Supabase DB, Tailwind CSS, user Auth, JWT',
-    //   image: firstProperty,
-    //   link: 'https://first-property.vercel.app/',
-    //   github: 'https://github.com/dariusgarcia/first-property',
-    // },
     // {
     //   name: 'NutriValue',
     //   description:
